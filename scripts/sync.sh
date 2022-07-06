@@ -20,7 +20,7 @@ repo sync
 if [ "$CI_USE_CUSTOM_REPO" = "true" ]; then
 cd $SYNC_PATH/bootable
 rm -rf recovery
-git clone $REPO_LINK $REPO_BRANCH recovery || { echo "ERROR: Failed to Clone the custom repo!" && exit 1; }
+git clone $REPO_LINK -b $REPO_BRANCH recovery || { echo "ERROR: Failed to Clone the custom repo!" && exit 1; }
 fi
 
 # Clone required patches for twrp-12.1
