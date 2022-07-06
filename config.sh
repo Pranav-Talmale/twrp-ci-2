@@ -2,7 +2,7 @@
 
 # Device
 export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_raphael-twrp.git -b test-3"
+export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_raphael-twrp.git -b twrp-12.1-FBEv2"
 
 export DEVICE="raphael"
 export OEM="xiaomi"
@@ -27,9 +27,9 @@ export OUTPUT="output.zip"
 #export CUSTOM_CLANG_FOLDER="clang_13.0.0"
 
 # Custom bootable/recovery repository
-export CI_USE_CUSTOM_REPO=true
-export REPO_LINK="https://github.com/Pranav-Talmale/twrp_android_bootable_recovery.git"
-export REPO_BRANCH="test"
+#export CI_USE_CUSTOM_REPO=true
+#export REPO_LINK="https://github.com/Pranav-Talmale/twrp_android_bootable_recovery.git"
+#export REPO_BRANCH="test"
 
 # Not Recommended to Change
 export SYNC_PATH="$HOME/work/twrp" # Full (absolute) path.
